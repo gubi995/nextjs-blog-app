@@ -8,7 +8,6 @@ const StyledCustomBanner = styled('div')(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'center',
   textAlign: 'center',
-  backgroundColor: theme.palette.background.default,
 }));
 
 interface Props {

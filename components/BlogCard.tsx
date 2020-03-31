@@ -14,9 +14,10 @@ const StyledChip = styled(Chip)(({ theme }) => ({ marginBottom: theme.spacing(1)
 
 interface Props {
   blog: Blog;
+  onClick: () => void;
 }
 
-const BlogCard = ({ blog }: Props) => {
+const BlogCard = ({ blog, onClick }: Props) => {
   return (
     <StyledCard variant="outlined">
       <StyledCardMedia image={blog.image.url} />
@@ -30,7 +31,7 @@ const BlogCard = ({ blog }: Props) => {
         </Typography>
       </CardContent>
       <StyledCardActions>
-        <Button variant="outlined" color="primary">
+        <Button variant="outlined" color="primary" onClick={onClick}>
           View post
         </Button>
       </StyledCardActions>
