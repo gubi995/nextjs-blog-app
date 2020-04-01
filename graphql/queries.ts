@@ -1,10 +1,11 @@
 export const GET_BLOGS = `
   {
-    blogs {
+    allBlogs {
       id
       title
       createdAt
       introduction
+      slug
       image {
         url
       }
@@ -12,24 +13,22 @@ export const GET_BLOGS = `
   }
 `;
 
-export const GET_BLOG_IDS = `
+export const GET_BLOG_SLUGS = `
   {
-    blogs {
-      id
+    allBlogs {
+      slug
     }
   }
 `;
 
 export const GET_BLOG = `
-  query GetBlog($id: ID!){
-    blog(where: {id: $id}) {
-      title,
-      createdAt,
-      content{
-        html
-      }
-      image{
-        url,
+  query GetBlog($slug: String!) {
+    blog(filter: {slug: {eq: $slug}}) {
+      title
+      createdAt
+      content
+      image {
+        url
       }
     }
   }

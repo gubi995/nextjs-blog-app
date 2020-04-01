@@ -1,10 +1,10 @@
 import { NextPage, GetStaticProps } from 'next';
-import Router from 'next/router';
 import { Container, styled } from '@material-ui/core';
-import { request } from 'graphql-request';
 
 import { GET_BLOGS } from '../../graphql/queries';
 import { Blog } from '../../models/blog';
+import { navigateAndScrollTop } from '../../utils/navigation';
+import client from '../../utils/graphql-client';
 
 import AppShell from '../../components/AppShell';
 import CustomBanner from '../../components/CustomBanner';
@@ -22,16 +22,16 @@ interface Props {
 }
 
 const BlogPostsPage: NextPage<Props> = ({ blogs }) => {
-  const navigate = (id: string) => {
-    Router.push('/blog/[id]', `/blog/${id}`);
-  };
-
   return (
     <AppShell pageTitle="Blog page">
       <CustomBanner title="Blog posts ✍" />
       <StyledContainer>
         {blogs.map((blog) => (
-          <BlogCard blog={blog} key={blog.id} onClick={() => navigate(blog.id)} />
+          <BlogCard
+            blog={blog}
+            key={blog.id}
+            onClick={() => navigateAndScrollTop('/blog/[slug]', `/blog/${blog.slug}`)}
+          />
         ))}
       </StyledContainer>
     </AppShell>
@@ -39,9 +39,9 @@ const BlogPostsPage: NextPage<Props> = ({ blogs }) => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const data = await request(process.env.API_ENDPOINT!, GET_BLOGS);
+  const data = await client.request(GET_BLOGS);
 
-  const blogs = data.blogs;
+  const blogs = data.allBlogs;
 
   return {
     props: { blogs },

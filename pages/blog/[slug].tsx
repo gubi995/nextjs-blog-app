@@ -1,12 +1,12 @@
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
-import { request } from 'graphql-request';
 import { Container, styled, Typography } from '@material-ui/core';
 
 import { Blog } from '../../models/blog';
 import { toReadableDate } from '../../utils/date';
+import client from '../../utils/graphql-client';
 
 import AppShell from '../../components/AppShell';
-import { GET_BLOG, GET_BLOG_IDS } from '../../graphql/queries';
+import { GET_BLOG, GET_BLOG_SLUGS } from '../../graphql/queries';
 
 const StyledImg = styled('img')(({ theme }) => ({
   marginTop: theme.spacing(3),
@@ -31,14 +31,14 @@ const SingleBlogPostPage: NextPage<Props> = ({ blog }) => {
         <Typography color="primary" variant="subtitle1">
           {toReadableDate(blog.createdAt)}
         </Typography>
-        <div dangerouslySetInnerHTML={{ __html: blog.content.html }} />
+        <div dangerouslySetInnerHTML={{ __html: blog.content }} />
       </Container>
     </AppShell>
   );
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const data = await request(process.env.API_ENDPOINT!, GET_BLOG, { id: params?.id });
+  const data = await client.request(GET_BLOG, { slug: params?.slug });
 
   const blog = data.blog;
 
@@ -48,9 +48,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const data = await request(process.env.API_ENDPOINT!, GET_BLOG_IDS);
+  const data = await client.request(GET_BLOG_SLUGS);
 
-  const paths = data.blogs.map((blog: Blog) => ({ params: { id: blog.id } }));
+  const paths = data.allBlogs.map((blog: Blog) => ({ params: { slug: blog.slug } }));
 
   return {
     paths,

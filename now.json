@@ -1,7 +1,8 @@
 {
   "build": {
     "env": {
-      "API_ENDPOINT": "@api-endpoint"
+      "API_ENDPOINT": "@api-endpoint",
+      "API_TOKEN": "@api-token"
     }
   }
 }

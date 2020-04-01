@@ -1,6 +1,7 @@
 import React from 'react';
-import Router from 'next/router';
 import { Paper, Typography, styled } from '@material-ui/core';
+
+import { navigateAndScrollTop } from '../utils/navigation';
 
 const StyledNavigationCards = styled('div')(({ theme }) => ({
   display: 'flex',
@@ -23,12 +24,12 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
 const NavigationCards = () => {
   return (
     <StyledNavigationCards>
-      <StyledPaper variant="outlined" onClick={() => Router.push('/repo')}>
+      <StyledPaper variant="outlined" onClick={() => navigateAndScrollTop('/repo')}>
         <Typography color="primary" variant="h6" component="h4">
           Take a look on my GitHub repos
         </Typography>
       </StyledPaper>
-      <StyledPaper variant="outlined" onClick={() => Router.push('/blog')}>
+      <StyledPaper variant="outlined" onClick={() => navigateAndScrollTop('/blog')}>
         <Typography color="primary" variant="h6" component="h4">
           Find some interesting topic between my blog posts
         </Typography>
