@@ -16,6 +16,8 @@ const StyledImg = styled('img')(({ theme }) => ({
   maxHeight: '400px',
 }));
 
+const StyledTypography = styled(Typography)({ fontWeight: 'bold' });
+
 interface Props {
   blog: Blog;
 }
@@ -25,10 +27,10 @@ const SingleBlogPostPage: NextPage<Props> = ({ blog }) => {
     <AppShell pageTitle={blog.title}>
       <Container maxWidth="sm">
         <StyledImg src={blog.image.url} />
-        <Typography color="primary" variant="h3">
+        <StyledTypography color="primary" variant="h4">
           {blog.title}
-        </Typography>
-        <Typography color="primary" variant="subtitle1">
+        </StyledTypography>
+        <Typography color="primary" variant="caption">
           {toReadableDate(blog.createdAt)}
         </Typography>
         <div dangerouslySetInnerHTML={{ __html: blog.content }} />
