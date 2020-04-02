@@ -25,7 +25,7 @@ interface Props {
 const SingleBlogPostPage: NextPage<Props> = ({ blog }) => {
   return (
     <AppShell pageTitle={blog.title}>
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
         <StyledImg src={blog.image.url} />
         <StyledTypography color="primary" variant="h4">
           {blog.title}

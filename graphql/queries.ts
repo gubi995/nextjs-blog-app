@@ -33,3 +33,18 @@ export const GET_BLOG = `
     }
   }
 `;
+
+export const GET_PERSONAL_REPOS = `
+  {
+    viewer {
+      repositories(first: 20) {
+        nodes {
+          createdAt,
+          name,
+          homepageUrl,
+          url
+        }
+      }
+    }
+  }
+`;

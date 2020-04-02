@@ -2,7 +2,8 @@
   "build": {
     "env": {
       "API_ENDPOINT": "@api-endpoint",
-      "API_TOKEN": "@api-token"
+      "API_TOKEN": "@api-token",
+      "GITHUB_TOKEN": "@github-token"
     }
   }
 }

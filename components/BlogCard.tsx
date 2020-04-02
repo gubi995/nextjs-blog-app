@@ -19,7 +19,7 @@ interface Props {
 
 const BlogCard = ({ blog, onClick }: Props) => {
   return (
-    <StyledCard variant="outlined">
+    <StyledCard>
       <StyledCardMedia image={blog.image.url} />
       <CardContent>
         <Typography color="primary" gutterBottom variant="h5" component="h2">
