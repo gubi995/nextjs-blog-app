@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RepoCard should rendered component matches with it's the snapshot [URLs are NOT present] 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-111 WithStyles(ForwardRef(Paper))-root-112 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <div
+      class="div-root-141"
+    >
+      <div>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-colorPrimary"
+        >
+          Name
+        </h6>
+        <span
+          class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
+        >
+          Mock repo
+        </span>
+      </div>
+      <div>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-colorPrimary"
+        >
+          Created
+        </h6>
+        <span
+          class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
+        >
+          4/1/2020
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root"
+      color="primary"
+    />
+    <div
+      class="div-root-141"
+    >
+      <a
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+        href="#"
+        rel="noopener"
+        tabindex="0"
+        target="_blank"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Repo url
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </a>
+      <hr
+        class="MuiDivider-root MuiDivider-vertical"
+      />
+      <a
+        aria-disabled="true"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary Mui-disabled Mui-disabled"
+        href="#"
+        rel="noopener"
+        tabindex="-1"
+        target="_blank"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Home page url
+        </span>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`RepoCard should rendered component matches with it's the snapshot [URLs are present] 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-1 WithStyles(ForwardRef(Paper))-root-2 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <div
+      class="div-root-31"
+    >
+      <div>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-colorPrimary"
+        >
+          Name
+        </h6>
+        <span
+          class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
+        >
+          Mock repo
+        </span>
+      </div>
+      <div>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-colorPrimary"
+        >
+          Created
+        </h6>
+        <span
+          class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
+        >
+          4/1/2020
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root"
+      color="primary"
+    />
+    <div
+      class="div-root-31"
+    >
+      <a
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+        href="http://mock-repo.com"
+        rel="noopener"
+        tabindex="0"
+        target="_blank"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Repo url
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </a>
+      <hr
+        class="MuiDivider-root MuiDivider-vertical"
+      />
+      <a
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+        href="http://mock-home-page.com"
+        rel="noopener"
+        tabindex="0"
+        target="_blank"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Home page url
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

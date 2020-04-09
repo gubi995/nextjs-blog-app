@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationCards should rendered component matches with it's the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="div-root-1 div-root-2"
+  >
+    <div
+      class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-3 WithStyles(ForwardRef(Paper))-root-4 MuiPaper-outlined MuiPaper-rounded"
+    >
+      <h4
+        class="MuiTypography-root MuiTypography-h6 MuiTypography-colorPrimary"
+      >
+        Take a look on my GitHub repos
+      </h4>
+    </div>
+    <div
+      class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-3 WithStyles(ForwardRef(Paper))-root-63 MuiPaper-outlined MuiPaper-rounded"
+    >
+      <h4
+        class="MuiTypography-root MuiTypography-h6 MuiTypography-colorPrimary"
+      >
+        Find some interesting topic between my blog posts
+      </h4>
+    </div>
+  </div>
+</DocumentFragment>
+`;

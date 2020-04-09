@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WelcomeBanner should rendered component matches with it's the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="div-root-1 div-root-2"
+  >
+    <div
+      class="MuiAvatar-root MuiAvatar-circle WithStyles(ForwardRef(Avatar))-root-3 WithStyles(ForwardRef(Avatar))-root-4"
+    >
+      <img
+        class="MuiAvatar-img"
+        src="/itsme.jpg"
+      />
+    </div>
+    <h4
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-12 WithStyles(ForwardRef(Typography))-root-13 MuiTypography-h4"
+    >
+      Welcome here my friend
+    </h4>
+    <h6
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-12 WithStyles(ForwardRef(Typography))-root-44 MuiTypography-subtitle1"
+    >
+      Check out my repos and blog posts
+    </h6>
+  </div>
+</DocumentFragment>
+`;

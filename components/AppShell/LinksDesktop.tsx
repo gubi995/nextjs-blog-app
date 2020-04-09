@@ -8,7 +8,7 @@ const LinkContainer = styled('div')({
 
 const LinksDesktop = () => {
   return (
-    <LinkContainer>
+    <LinkContainer data-testid="link-desktop">
       <Button color="inherit" onClick={() => Router.push('/blog')}>
         Blog
       </Button>

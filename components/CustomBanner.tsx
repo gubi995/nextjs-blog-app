@@ -1,14 +1,14 @@
 import React from 'react';
 import { Typography, styled } from '@material-ui/core';
 
-const StyledCustomBanner = styled('div')(({ theme }) => ({
+const StyledCustomBanner = styled('div')({
   height: '150px',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
   textAlign: 'center',
-}));
+});
 
 interface Props {
   title: string;

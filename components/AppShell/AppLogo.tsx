@@ -15,7 +15,7 @@ const AppLogo = () => {
   return (
     <StyledAppLogo onClick={() => Router.push('/')}>
       <Typography variant="h6">Web development</Typography>
-      <StyledCodeIcon />
+      <StyledCodeIcon aria-label="App logo" />
     </StyledAppLogo>
   );
 };

@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechIcons should rendered component matches with it's the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="div-root-1 div-root-2"
+  >
+    <div
+      class="MuiAvatar-root MuiAvatar-square"
+    >
+      <img
+        alt="html"
+        class="MuiAvatar-img"
+        src="/prog-icons/Html.png"
+      />
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-square"
+    >
+      <img
+        alt="css"
+        class="MuiAvatar-img"
+        src="/prog-icons/Css.png"
+      />
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-square"
+    >
+      <img
+        alt="js"
+        class="MuiAvatar-img"
+        src="/prog-icons/Javascript.png"
+      />
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-square"
+    >
+      <img
+        alt="ts"
+        class="MuiAvatar-img"
+        src="/prog-icons/Typescript.png"
+      />
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-square"
+    >
+      <img
+        alt="npm"
+        class="MuiAvatar-img"
+        src="/prog-icons/Npm.png"
+      />
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-square"
+    >
+      <img
+        alt="yarn"
+        class="MuiAvatar-img"
+        src="/prog-icons/Yarn.png"
+      />
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-square"
+    >
+      <img
+        alt="webpack"
+        class="MuiAvatar-img"
+        src="/prog-icons/Webpack.png"
+      />
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-square"
+    >
+      <img
+        alt="react"
+        class="MuiAvatar-img"
+        src="/prog-icons/React.png"
+      />
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-square"
+    >
+      <img
+        alt="angular"
+        class="MuiAvatar-img"
+        src="/prog-icons/Angular.png"
+      />
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-square"
+    >
+      <img
+        alt="node"
+        class="MuiAvatar-img"
+        src="/prog-icons/Nodejs.png"
+      />
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-square"
+    >
+      <img
+        alt="mongo"
+        class="MuiAvatar-img"
+        src="/prog-icons/Mongodb.png"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

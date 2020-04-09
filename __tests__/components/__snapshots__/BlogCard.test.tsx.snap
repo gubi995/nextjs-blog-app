@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogCard should rendered component matches with it's the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiCard-root WithStyles(ForwardRef(Card))-root-1 WithStyles(ForwardRef(Card))-root-2 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <div
+      class="MuiCardMedia-root WithStyles(ForwardRef(CardMedia))-root-32"
+      style="background-image: url(https://www.mock.com/image.jpeg);"
+    />
+    <div
+      class="MuiCardContent-root"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-gutterBottom"
+      >
+        Blog title
+      </h2>
+      <div
+        class="MuiChip-root WithStyles(ForwardRef(Chip))-root-67 WithStyles(ForwardRef(Chip))-root-68 MuiChip-colorPrimary MuiChip-outlined MuiChip-outlinedPrimary MuiChip-sizeSmall"
+      >
+        <span
+          class="MuiChip-label MuiChip-labelSmall"
+        >
+          4/1/2020
+        </span>
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-colorPrimary"
+      >
+        Blog intro
+      </p>
+    </div>
+    <div
+      class="MuiCardActions-root WithStyles(ForwardRef(CardActions))-root-99 MuiCardActions-spacing"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          View post
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
